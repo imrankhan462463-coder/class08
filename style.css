@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+      font-family: "Open Sans", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --primary-color:#173a69;
+    
+
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+header .top-header{
+    background-color: var(--primary-color);
+    padding: 12px 0;
+}
+header .top-header .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header .top-header .container .left-side a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+
+header .top-header .container .left-side a i{
+    margin-right: 9px;
+}
+
+header .top-header .container .left-side a:first-child{
+    margin-right: 51px;
+}
+
+header .top-header .container .right-side{
+    text-align: right;
+}
+
+header .top-header .container .right-side a{
+  
+    color:white; 
+    
+}
+
+header .top-header .container .right-side a:nth-child(2){
+      margin: 0 34px;
+}
+
+header .main-menu{
+    padding: 16px 0;
+}
+
+header .main-menu .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header .main-menu .container .right-side{
+    text-align: right;
+    align-content: center;
+}
+
+header .main-menu .container ul{
+    list-style-type: none;
+}
+
+header .main-menu .container ul li{
+    display: inline-block;
+}
+
+
+header .main-menu .container ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0 38px;
+}
+
+header .main-menu .container ul li:last-child a{
+    padding-right: 0;
+}
