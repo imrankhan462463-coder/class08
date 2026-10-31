@@ -76,11 +76,88 @@ header .main-menu .container ul li{
 
 
 header .main-menu .container ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
     text-decoration: none;
-    color: var(--primary-color);
+    color:#282828;
     padding: 0 38px;
+    position: relative;
 }
 
 header .main-menu .container ul li:last-child a{
     padding-right: 0;
+}
+
+header .main-menu .container ul li a::after{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 4px;
+    background-color: var(--primary-color);
+    left: 50%;
+    bottom: -34px;
+    transform: translateX(-50%);
+}
+
+header .main-menu .container ul li a:hover::after{
+    width: 100%;
+    transition: .4s;
+}
+
+.home-slider .slider-one{
+    height: 400px;
+    background-image: url('slider-one bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.home-slider .slider-one .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-slider .slider-one .container .right-side h3{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.home-slider .slider-one .container .right-side h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.home-slider .slider-one .container .right-side p{
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.home-slider .slider-one .container .right-side .btn-group a{
+    background-color: var(--primary-color);
+    padding: 14px 25px;
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+
+}
+
+.home-slider .slider-one .container .right-side .btn-group a:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.home-slider .slider-one .container .right-side .btn-group a:last-child{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.home-slider .slider-one .container .right-side .btn-group a:last-child:hover{
+    background-color: var(--primary-color);
+    color: white;
 }
