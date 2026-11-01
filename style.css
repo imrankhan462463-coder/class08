@@ -1,97 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
-      font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-:root{
-    --primary-color:#173a69;
-    
+
+:root {
+    --primary-color: #173a69;
+
 
 }
-.container{
+
+.container {
     max-width: 1140px;
     margin: 0 auto;
 
 }
 
-header .top-header{
+header .top-header {
     background-color: var(--primary-color);
     padding: 12px 0;
 }
-header .top-header .container{
+
+header .top-header .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-header .top-header .container .left-side a{
+
+header .top-header .container .left-side a {
     text-decoration: none;
     color: white;
     font-size: 13px;
 }
 
 
-header .top-header .container .left-side a i{
+header .top-header .container .left-side a i {
     margin-right: 9px;
 }
 
-header .top-header .container .left-side a:first-child{
+header .top-header .container .left-side a:first-child {
     margin-right: 51px;
 }
 
-header .top-header .container .right-side{
+header .top-header .container .right-side {
     text-align: right;
 }
 
-header .top-header .container .right-side a{
-  
-    color:white; 
-    
+header .top-header .container .right-side a {
+
+    color: white;
+
 }
 
-header .top-header .container .right-side a:nth-child(2){
-      margin: 0 34px;
+header .top-header .container .right-side a:nth-child(2) {
+    margin: 0 34px;
 }
 
-header .main-menu{
+header .main-menu {
     padding: 16px 0;
 }
 
-header .main-menu .container{
+header .main-menu .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-header .main-menu .container .right-side{
+header .main-menu .container .right-side {
     text-align: right;
     align-content: center;
 }
 
-header .main-menu .container ul{
+header .main-menu .container ul {
     list-style-type: none;
 }
 
-header .main-menu .container ul li{
+header .main-menu .container ul li {
     display: inline-block;
 }
 
 
-header .main-menu .container ul li a{
+header .main-menu .container ul li a {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-    color:#282828;
+    color: #282828;
     padding: 0 38px;
     position: relative;
 }
 
-header .main-menu .container ul li:last-child a{
+header .main-menu .container ul li:last-child a {
     padding-right: 0;
 }
 
-header .main-menu .container ul li a::after{
+header .main-menu .container ul li a::after {
     content: '';
     position: absolute;
-    width:0;
+    width: 0;
     height: 4px;
     background-color: var(--primary-color);
     left: 50%;
@@ -99,42 +104,42 @@ header .main-menu .container ul li a::after{
     transform: translateX(-50%);
 }
 
-header .main-menu .container ul li a:hover::after{
+header .main-menu .container ul li a:hover::after {
     width: 100%;
     transition: .4s;
 }
 
-.home-slider .slider-one{
+.home-slider .slider-one {
     height: 400px;
-    background-image: url('slider-one bg.jpg');
+    background-image: url('image/slider-one bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
 }
 
-.home-slider .slider-one .container{
+.home-slider .slider-one .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.home-slider .slider-one .container .right-side h3{
+.home-slider .slider-one .container .right-side h3 {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 17px;
 }
 
-.home-slider .slider-one .container .right-side h1{
+.home-slider .slider-one .container .right-side h1 {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 60px;
 }
 
-.home-slider .slider-one .container .right-side p{
+.home-slider .slider-one .container .right-side p {
     font-size: 14px;
     margin: 15px 0;
 }
 
-.home-slider .slider-one .container .right-side .btn-group a{
+.home-slider .slider-one .container .right-side .btn-group a {
     background-color: var(--primary-color);
     padding: 14px 25px;
     border: 2px solid var(--primary-color);
@@ -147,17 +152,99 @@ header .main-menu .container ul li a:hover::after{
 
 }
 
-.home-slider .slider-one .container .right-side .btn-group a:hover{
+.home-slider .slider-one .container .right-side .btn-group a:hover {
     background-color: transparent;
     color: var(--primary-color);
 }
 
-.home-slider .slider-one .container .right-side .btn-group a:last-child{
+.home-slider .slider-one .container .right-side .btn-group a:last-child {
     background-color: transparent;
     color: var(--primary-color);
 }
 
-.home-slider .slider-one .container .right-side .btn-group a:last-child:hover{
+.home-slider .slider-one .container .right-side .btn-group a:last-child:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+
+.services-section {
+
+    padding: 88px 0 112px;
+
+}
+
+.services-section .section-heading {
+
+    text-align: center;
+}
+
+.services-section .section-heading h2 {
+
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin-bottom: 32px;
+
+}
+
+.services-section .container .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 69px;
+
+}
+
+.services-section .container .services .box {
+    text-align: center;
+
+}
+
+.services-section .container .services .box p {
+
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.about-section {
+    padding: 85px 0 80px 0;
+}
+
+.about-section {
+
+    padding: 85px 0 80px 0;
+    background-image: url('image/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.about-section .section-heading {
+    margin-bottom: 26px;
+}
+
+.about-section .section-heading h2 {
+
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin-bottom: 32px;
+
+}
+
+.about-section .container .right-side {
+    align-content: center;
+}
+
+.about-section .container .right-side p {
+
+    font-weight: 100px;
+    font-size: 15px;
+    margin-bottom: 30px;
+
 }
