@@ -149,7 +149,6 @@ header .main-menu .container ul li a:hover::after {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-
 }
 
 .home-slider .slider-one .container .right-side .btn-group a:hover {
@@ -345,7 +344,6 @@ border:3px solid var(--primary-color);
 background-color:var(--primary-color);
 }
 
-
 .Gallery-section .container .contact-us a:hover{
     background-color: transparent;
     color:var(--primary-color);
@@ -371,7 +369,6 @@ color: white;
  footer .footer-contact{
     padding: 90px 0;
  }
-
 
  footer .footer-contact .container{
     text-align: center;
@@ -414,3 +411,78 @@ color: white;
     color: white;
     font-weight: 700;
  }
+
+/**** design for services page ****/
+
+.innerbanner{
+background-image: url(image/inner\ bg.png);
+height:255px;
+background-size: cover;
+align-content: center;
+}
+.innerbanner .container{
+
+    text-align: center;
+
+}
+
+.innerbanner .container h2{
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    color: white;
+}
+
+.innerbanner .container p{
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* services photo start */
+
+.info {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: #f8f8f8;
+
+}
+
+.info .container .flex-column img{
+    display: block;
+    width: 100%;
+}
+
+.info .container .flex-column h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #173a69;
+    padding-top: 20px;
+}
+
+.info .container .flex-column p{
+    font-size: 15px;
+    width: 100%;
+    color: #0f0f0f;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.info .container .main-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+/* services photo end*/
+
+ 
+
+
+
+
+ 
