@@ -483,6 +483,498 @@ align-content: center;
  
 
 
-
-
+.containe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
  
+
+
+
+
+
+
+
+
+
+
+
+/* about */
+
+.about-section {
+    padding: 65px 0;
+    background-image: url('image/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-section .left-side img {
+    width: 100%;
+    display: block;
+}
+
+.about-section .right-side {
+    align-content: center;
+}
+
+.about-section .section-heading h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-section .section-heading h2 span {
+    color: #173a69;
+}
+
+.about-section .section-heading img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-section .right-side p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* SALES SECTION */
+
+.sales-section {
+    padding: 55px 0;
+    background-image:url('image/backgrount.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sales-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+}
+
+.sales-section .box {
+    background-color: #fff;
+    padding: 25px 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sales-section .box:hover {
+    transform: translateY(-7px);
+}
+
+.sales-section .box .sales-icon {
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-section .box .sales-icon img {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
+}
+
+.sales-section .box h3 {
+    font-size: 14px;
+    color: #173a69;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.lineImg{
+width: 110px;
+height: 14px;
+
+}
+
+.sales-section .box p {
+    font-size: 11px;
+    color: #444;
+    line-height: 1.8;
+}
+
+
+/* COMPANY TEXT */
+
+.company-text {
+    background: #fff;
+    padding: 22px 0;
+    text-align: center;
+}
+
+.company-text p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.company-text p span {
+    color: #173a69;
+}
+
+
+/* INFORMATION SECTION */
+
+.information-section {
+    padding: 55px 0;
+    background-image:
+       
+        url('image/backgrount2.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.information-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.information-box {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.information-icon {
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-icon i {
+    font-size: 22px;
+    color: #173a69;
+}
+
+.information-box h3 {
+    color: #173a69;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.information-box p {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* ACTIVE NAVIGATION */
+
+.main-menu ul li a.active {
+    color: #173a69;
+}
+
+.main-menu ul li a.active::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CONTACT PAGE DESIGN START
+========================================= */
+
+
+/* MAIN CONTACT SECTION */
+
+#contact-section {
+
+    padding: 45px 0 36px;
+
+    background-color: #ffffff;
+
+}
+
+
+#contact-section .container {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 28px;
+
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   LEFT SIDE CONTACT FORM
+========================================= */
+
+
+#contact-form h2 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #171717;
+
+    margin-bottom: 8px;
+
+}
+
+
+#contact-form > p {
+
+    font-size: 11px;
+
+    color: #333333;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* NAME AND EMAIL */
+
+#contact-form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+
+    margin-bottom: 11px;
+
+}
+
+
+#contact-form-row input {
+
+    width: 100%;
+
+    height: 28px;
+
+    padding: 0 7px;
+
+    border: 1px solid #dddddd;
+
+    font-size: 11px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+#contact-form-row input:focus {
+
+    border-color: #173a69;
+
+}
+
+
+/* SUBJECT */
+
+#contact-subject {
+
+    margin-bottom: 11px;
+
+}
+
+
+#contact-subject input {
+
+    width: 100%;
+
+    height: 28px;
+
+    padding: 0 7px;
+
+    border: 1px solid #dddddd;
+
+    font-size: 11px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+#contact-subject input:focus {
+
+    border-color: #173a69;
+
+}
+
+
+/* MESSAGE */
+
+#contact-message {
+
+    margin-bottom: 10px;
+
+}
+
+
+#contact-message textarea {
+
+    width: 100%;
+
+    height: 68px;
+
+    padding: 8px 7px;
+
+    border: 1px solid #dddddd;
+
+    font-size: 11px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    resize: none;
+
+    box-sizing: border-box;
+
+}
+
+
+#contact-message textarea:focus {
+
+    border-color: #173a69;
+
+}
+
+
+/* SEND MESSAGE BUTTON */
+
+#contact-form button {
+
+    background-color: #173a69;
+
+    color: #ffffff;
+
+    border: 2px solid #173a69;
+
+    padding: 7px 24px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+#contact-form button:hover {
+
+    background-color: transparent;
+
+    color: #173a69;
+
+}
+
+
+/* =========================================
+   RIGHT SIDE CONTACT INFORMATION
+========================================= */
+
+
+#contact-information {
+
+    padding-top: 5px;
+
+}
+
+
+#contact-information h2 {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #171717;
+
+    margin-bottom: 15px;
+
+}
+
+
+#contact-information ul {
+
+    list-style: none;
+
+}
+
+
+#contact-information ul li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+
+    color: #333333;
+
+}
+
+
+#contact-information ul li i {
+
+    color: #173a69;
+
+    font-size: 12px;
+
+    width: 13px;
+
+}
+
+
+#contact-information ul li strong {
+
+    color: #173a69;
+
+    font-weight: 700;
+
+}
+
